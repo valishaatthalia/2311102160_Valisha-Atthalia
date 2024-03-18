@@ -4,7 +4,8 @@
 ## Dasar Teori
 
 Tipe data adalah sebuah pengklasifikasi data berdasarkan jenis data tesebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan.
-    1. Tipe Data Primitif
+1. Tipe Data Primitif
+    Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe ini disediakan oleh berbagai macam pemrogramman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrogramman, compiler dan sistem operasinya. 
 
 ## Guided 
 
