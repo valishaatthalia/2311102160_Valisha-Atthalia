@@ -5,7 +5,12 @@
 
 Tipe data adalah sebuah pengklasifikasi data berdasarkan jenis data tesebut. Tipe data dibutuhkan agar kompiler dapat mengetahui bagaimana sebuah data akan digunakan.
 1. Tipe Data Primitif
-    Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe ini disediakan oleh berbagai macam pemrogramman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrogramman, compiler dan sistem operasinya. 
+
+Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe ini disediakan oleh berbagai macam pemrogramman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrogramman, compiler dan sistem operasinya. 
+
+2. Tipe data Abstrak
+
+Tipe data abstrak atau Abstrak Data Tipe (ADT) adalah tipe data yang dibentuk oleh programer itu sendiri. Pada tipe data abstrak bisa berisi banyak tipe data, jadi nilainya bisa lebih dari satu dan beragam tipe data. Fitur Class adalah fitur Object Oriented Program(OOP) pada bahasa C++ yang mirip dengan fitur data structures Struct pada bahasa C. Keduanya berfungsi untuk membungkus tipe data di dalamnya sebagai anggota. menurut learn microsoft.com perbedaan antara
 
 ## Guided 
 
