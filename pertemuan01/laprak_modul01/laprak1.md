@@ -15,22 +15,59 @@ Tipe data abstrak atau Abstrak Data Tipe (ADT) adalah tipe data yang dibentuk ol
 3. Tipe Data Koleksi
 
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Ada beberapa tipe data koleksi yang umum digunakan dalam pemrograman, dan di antaranya adalah:
+a. Array
+Array adalah struktur data statis yang menyimpan elemen-elemen dengan tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
+b. Vector
+Vector adalah Standard Template Library (STL) jika di dalam C/C++ memiliki bentuk std::vector. Umumnya, vector mirip seperti array yang memiliki kemampuan untuk menyimpan data dalam bentuk elemen-elemen yang alokasi memorinya dilakukan otomatis dan bersebelahan.
+c. Map
+Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 
-## Guided 
+## Guided 1
 
-### 1. [Nama Topik]
+### 1. [Tipe Data Primitif]
 
 ```C++
 #include <iostream>
-using namespace std;
+#include <iomanip>
 
+using namespace std;
 int main() {
-    cout << "ini adalah file code guided praktikan" << endl;
-    return 0;
+    char op;
+    float num1, num2;
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
+    switch (op) {
+        case '+':
+            cout << "Result: " << num1 + num2;
+        break;
+        case '-':
+            cout << "Result: " << num1 - num2;
+        break;
+        case '*':
+            cout << "Result: " << num1 * num2;
+        break;
+        case '/':
+        if (num2 != 0) {
+            cout << "Result: " << fixed << setprecision(2) << 
+            num1 / num2;
+        } else {
+            cout << "Error! Division by zero is not allowed.";
+        }
+        break;
+            cout << "Error! Operator is not correct";
+    }
+return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+1. Fungsi main() dimulai dengan mendeklarasikan variabel op (untuk menyimpan operator), num1, dan num2 (untuk menyimpan dua bilangan yang akan dioperasikan).
+2. Pengguna diminta untuk memasukkan operator matematika (+, -, *, /) dan dua bilangan.
+3. Program menggunakan switch-case untuk mengevaluasi operator yang dimasukkan oleh pengguna. Setiap case mengimplementasikan operasi matematika yang sesuai terhadap dua bilangan dan menampilkan hasilnya.
+4. Jika operator yang dimasukkan adalah '/' (pembagian), program memeriksa apakah bilangan kedua tidak sama dengan nol. Jika iya, itu akan melakukan pembagian dan menampilkan hasil dengan menggunakan presisi dua angka desimal. Jika tidak, program akan menampilkan pesan kesalahan karena pembagian dengan nol tidak diperbolehkan.
+5. Jika operator yang dimasukkan tidak cocok dengan operator yang diharapkan, program akan menampilkan pesan kesalahan.
+6. Setelah melakukan operasi yang sesuai, program mengembalikan nilai 0, menandakan bahwa program telah berjalan dengan sukses.
 
 ## Unguided 
 
