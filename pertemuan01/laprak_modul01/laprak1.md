@@ -116,22 +116,80 @@ int main(){
 ```
 Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
 
-
-## Unguided 
-
-### 1. [Soal]
+### 3. [Tipe Data Koleksi]
 
 ```C++
 #include <iostream>
+#include <array>
+
+using namespace std;
+int main() {
+    // Deklarasi dan inisialisasi array
+    int nilai[5];
+    nilai[0] = 23;
+    nilai[1] = 50;
+    nilai[2] = 34;
+    nilai[3] = 78;
+    nilai[4] = 90;
+    
+    // Mencetak array dengan tab
+    cout << "Isi array pertama : " << nilai[0] << endl;
+    cout << "Isi array kedua : " << nilai[1] << endl;
+    cout << "Isi array ketiga : " << nilai[2] << endl;
+    cout << "Isi array keempat : " << nilai[3] << endl;
+    cout << "Isi array kelima : " << nilai[4] << endl;
+return 0;
+}
+```
+Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
+
+## Unguided 
+
+### 1. [Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!] 
+
+```C++
+#include <iostream>
+
 using namespace std;
 
+// Fungsi untuk menjumlahkan dua bilangan
+int tambah(int a, int b) {
+    return a + b;
+}
+
+// Fungsi untuk mengalikan dua bilangan
+int kali(int a, int b) {
+    return a * b;
+}
+
+// Fungsi utama
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    // Deklarasi variabel
+    int bilangan1, bilangan2;
+
+    // Input dua bilangan dari pengguna
+    cout << "Masukkan bilangan pertama: ";
+    cin >> bilangan1;
+    cout << "Masukkan bilangan kedua: ";
+    cin >> bilangan2;
+
+    // Menampilkan hasil penjumlahan
+    int hasil_tambah = tambah(bilangan1, bilangan2);
+    cout << "Hasil penjumlahan: " << hasil_tambah << endl;
+
+    // Menampilkan hasil perkalian
+    int hasil_kali = kali(bilangan1, bilangan2);
+    cout << "Hasil perkalian: " << hasil_kali << endl;
+
     return 0;
 }
 ```
+Dua fungsi didefinisikan
+a. tambah(int a, int b): Fungsi ini mengambil dua parameter integer dan mengembalikan hasil penjumlahan dari kedua parameter tersebut.
+b. kali(int a, int b): Fungsi ini mengambil dua parameter integer dan mengembalikan hasil perkalian dari kedua parameter tersebut.
+
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![2311102160_valisha output 1](<output_unguided01 (280).png>)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
