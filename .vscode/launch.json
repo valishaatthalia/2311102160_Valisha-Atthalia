@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/2311102160_Valisha-Atthalia/pertemuan02/output",
-      "program": "e:/2311102160_Valisha-Atthalia/pertemuan02/output/build/Debug/outDebug",
+      "cwd": "e:/2311102160_Valisha-Atthalia/pertemuan01/output",
+      "program": "e:/2311102160_Valisha-Atthalia/pertemuan01/output/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
