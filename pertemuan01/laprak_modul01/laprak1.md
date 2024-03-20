@@ -17,16 +17,19 @@ Tipe data abstrak atau Abstrak Data Tipe (ADT) adalah tipe data yang dibentuk ol
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Ada beberapa tipe data koleksi yang umum digunakan dalam pemrograman, dan di antaranya adalah:
 
 a. Array
+
 Array adalah struktur data statis yang menyimpan elemen-elemen dengan tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
 
 b. Vector
+
 Vector adalah Standard Template Library (STL) jika di dalam C/C++ memiliki bentuk std::vector. Umumnya, vector mirip seperti array yang memiliki kemampuan untuk menyimpan data dalam bentuk elemen-elemen yang alokasi memorinya dilakukan otomatis dan bersebelahan.
 
 c. Map
+
 Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 
-## Guided 1
+## Guided 
 
 ### 1. [Tipe Data Primitif]
 
@@ -71,6 +74,48 @@ return 0;
 4. Jika operator yang dimasukkan adalah '/' (pembagian), program memeriksa apakah bilangan kedua tidak sama dengan nol. Jika iya, itu akan melakukan pembagian dan menampilkan hasil dengan menggunakan presisi dua angka desimal. Jika tidak, program akan menampilkan pesan kesalahan karena pembagian dengan nol tidak diperbolehkan.
 5. Jika operator yang dimasukkan tidak cocok dengan operator yang diharapkan, program akan menampilkan pesan kesalahan.
 6. Setelah melakukan operasi yang sesuai, program mengembalikan nilai 0, menandakan bahwa program telah berjalan dengan sukses.
+
+
+### 2. [Tipe Data Abstrak]
+
+```C++
+#include <stdio.h>
+#include <string.h>
+
+//Struct
+struct Mahasiswa{
+
+    char name[50];
+    char address[100];
+    int age;
+};
+
+int main(){
+    // menggunakan struct
+    struct Mahasiswa mhs1, mhs2;
+    // mengisi nilai ke struct
+    strcpy(mhs1.name, "Dian");
+    strcpy(mhs1.address, "Mataram");
+    mhs1.age = 22;
+    strcpy(mhs2.name, "Bambang");
+    strcpy(mhs2.address, "Surabaya");
+    mhs2.age = 23;
+    
+    // mencetak isi struct
+    printf("## Mahasiswa 1 ##\n");
+    printf("Nama: %s\n", mhs1.name);
+    printf("Alamat: %s\n", mhs1.address);
+    printf("Umur: %d\n", mhs1.age);
+    printf ("\n");
+    printf("## Mahasiswa 2 ##\n");
+    printf("Nama: %s\n", mhs2.name);
+    printf("Alamat: %s\n", mhs2.address);
+    printf("Umur: %d\n", mhs2.age);
+    return 0;
+}
+```
+Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
+
 
 ## Unguided 
 
