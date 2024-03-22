@@ -189,7 +189,7 @@ a. tambah(int a, int b): Fungsi ini mengambil dua parameter integer dan mengemba
 b. kali(int a, int b): Fungsi ini mengambil dua parameter integer dan mengembalikan hasil perkalian dari kedua parameter tersebut.
 
 #### Output:
-![2311102160_valisha output 1](<output_unguided01 (280).png>)
+![2311102160_valisha output 1](<output_unguided01.png>)
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
 ```C++
