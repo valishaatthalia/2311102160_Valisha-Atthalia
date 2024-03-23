@@ -192,8 +192,8 @@ b. kali(int a, int b): Fungsi ini mengambil dua parameter integer dan mengembali
 ![2311102160_valisha output 1](<output_unguided01.png>)
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
+a. Menggunakan Struct
 ```C++
-// 1. Menggunakan Struct
 #include <iostream>
 #include <string>
 using namespace std;
@@ -217,11 +217,75 @@ int main(){
     return 0;
 }
 ```
-
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+1. Program dimulai dengan mendefinisikan struktur mahasiswa_160, yang memiliki dua anggota: nama_160 untuk menyimpan nama mahasiswa dan jurusan_160 untuk menyimpan jurusan mahasiswa.
+2. Di dalam fungsi main(), program membuat sebuah objek mhs_160 dari tipe mahasiswa_160.
+3. Program kemudian menginisialisasi anggota-anggota dari objek mhs_160 dengan nama dan jurusan mahasiswa.
+4. Program mencetak data mahasiswa yang telah diinisialisasi ke layar dengan menggunakan perintah cout.
 
 #### Output:
-!![2311102160_Valisha Atthalia](<output_unguided02.png>)
+![2311102160_Valisha Atthalia](<output_unguided02.png>)
+
+b. Menggunakan Class
+```C++
+#include <iostream>
+using namespace std;
+
+// Deklarasi class
+class Kotak_160 {
+private:
+    double panjang_160;
+    double lebar_160;
+    double tinggi_160;
+
+public:
+    // Konstruktor
+    Kotak_160 (double p, double l, double t) {
+        panjang_160 = p;
+        lebar_160 = l;
+        tinggi_160 = t;
+    }
+
+    // Fungsi untuk menghitung volume kotak
+    double hitungVolume_160() {
+        return panjang_160 * lebar_160 * tinggi_160;
+    }
+
+    // Fungsi untuk menghitung luas permukaan kotak
+    double hitungLuasPermukaan_160 () {
+        return 2 * (panjang_160 * lebar_160 + panjang_160 * tinggi_160 + lebar_160 * tinggi_160);
+    }
+};
+
+int main() {
+    // Membuat objek kotak
+    Kotak_160 kotak1 (3.0, 4.0, 5.0);
+
+    // Menghitung volume dan luas permukaan kotak
+    double volume_160 = kotak1.hitungVolume_160 ();
+    double luas_permukaan_160 = kotak1.hitungLuasPermukaan_160 ();
+
+    // Menampilkan hasil perhitungan
+    cout << "Volume kotak: " << volume_160 << endl;
+    cout << "Luas permukaan kotak: " << luas_permukaan_160 << endl;
+
+    return 0;
+}
+1. Deklarasikan sebuah kelas bernama Kotak_160 yang memiliki atribut panjang_160, lebar_160, dan tinggi_160 yang merepresentasikan panjang, lebar, dan tinggi kotak.
+2. Deklarasikan Kotak_160 yang akan digunakan untuk inisialisasi nilai-nilai awal panjang, lebar, dan tinggi kotak saat objek Kotak_160 dibuat.
+3. Deklarasikan hitungVolume_160() dan hitungLuasPermukaan_160() yang digunakan untuk menghitung volume dan luas permukaan kotak berdasarkan nilai-nilai panjang, lebar, dan tinggi yang telah diinisialisasi.
+4. Di dalam fungsi main(), sebuah objek Kotak_160 dengan nilai panjang 3.0, lebar 4.0, dan tinggi 5.0 dibuat.
+Volume dan luas permukaan dari objek kotak tersebut dihitung menggunakan metode yang telah didefinisikan.
+5. Hasil perhitungan kemudian ditampilkan menggunakan cout.
+
+A. Fungsi dari Class
+Class adalah struktur data yang mendefinisikan tipe data baru yang memiliki data (variabel anggota) dan fungsi (metode) yang terkait dengannya. Dalam class, data dan fungsi tersebut bersifat terkait dan dapat diakses melalui objek dari class tersebut. Class memungkinkan untuk menggabungkan data dan perilaku dalam satu kesatuan.
+
+B. Fungsi dari Struct
+Struct adalah struktur data yang mirip dengan class, tetapi secara default semua anggotanya adalah public (dalam class, secara default anggotanya adalah private). Struct biasanya digunakan untuk menyimpan sekumpulan data yang terkait, tetapi tidak memiliki fungsi yang terkait.
+
+!![2311102160_Valisha Atthalia](<outputclass_unguided02.png>)
+
+### 2. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.]
 
 
 ## Kesimpulan
