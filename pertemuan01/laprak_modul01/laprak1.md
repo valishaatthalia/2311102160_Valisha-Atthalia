@@ -17,15 +17,12 @@ Tipe data abstrak atau Abstrak Data Tipe (ADT) adalah tipe data yang dibentuk ol
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Ada beberapa tipe data koleksi yang umum digunakan dalam pemrograman, dan di antaranya adalah:
 
 a. Array
-
 Array adalah struktur data statis yang menyimpan elemen-elemen dengan tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
 
 b. Vector
-
 Vector adalah Standard Template Library (STL) jika di dalam C/C++ memiliki bentuk std::vector. Umumnya, vector mirip seperti array yang memiliki kemampuan untuk menyimpan data dalam bentuk elemen-elemen yang alokasi memorinya dilakukan otomatis dan bersebelahan.
 
 c. Map
-
 Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 
@@ -223,7 +220,7 @@ int main(){
 4. Program mencetak data mahasiswa yang telah diinisialisasi ke layar dengan menggunakan perintah cout.
 
 #### Output:
-![2311102160_Valisha Atthalia](<output_unguided02.png>)
+![2311102160_Valisha Atthalia](<outputclass_unguided02.png>)
 
 b. Menggunakan Class
 ```C++
@@ -270,6 +267,7 @@ int main() {
 
     return 0;
 }
+```
 1. Deklarasikan sebuah kelas bernama Kotak_160 yang memiliki atribut panjang_160, lebar_160, dan tinggi_160 yang merepresentasikan panjang, lebar, dan tinggi kotak.
 2. Deklarasikan Kotak_160 yang akan digunakan untuk inisialisasi nilai-nilai awal panjang, lebar, dan tinggi kotak saat objek Kotak_160 dibuat.
 3. Deklarasikan hitungVolume_160() dan hitungLuasPermukaan_160() yang digunakan untuk menghitung volume dan luas permukaan kotak berdasarkan nilai-nilai panjang, lebar, dan tinggi yang telah diinisialisasi.
@@ -285,11 +283,52 @@ Struct adalah struktur data yang mirip dengan class, tetapi secara default semua
 
 !![2311102160_Valisha Atthalia](<outputclass_unguided02.png>)
 
-### 2. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.]
+### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.]
+```C++
+#include <iostream>
+#include <map>
+#include <string>
 
+using namespace std;
+
+int main() {
+    string input_string;
+    cout << "Masukkan string: ";
+    getline(cin, input_string);
+
+    map <char, int> char_frequency;
+
+    // Menghitung frekuensi kemunculan setiap karakter
+    for (char c : input_string) {
+        if (isalpha(c)) {  // Memeriksa apakah karakter adalah huruf
+            char_frequency[c]++;
+        }
+    }
+
+    // Menampilkan frekuensi kemunculan setiap karakter
+    cout << "Frekuensi kemunculan setiap karakter:\n";
+    for (const auto& pair : char_frequency) {
+        cout << "'" << pair.first << "' : " << pair.second << endl;
+    }
+
+    return 0;
+}
+```
+![2311102160_Valisha Atthalia](<output_unguided03.png>)
+
+1. string input_string; mendeklarasikan variabel input_string yang akan digunakan untuk menyimpan string yang dimasukkan oleh pengguna.
+2. cout << "Masukkan string: "; menampilkan pesan untuk meminta pengguna untuk memasukkan sebuah string.
+3. getline(cin, input_string); mengambil string yang dimasukkan oleh pengguna dan menyimpannya dalam variabel input_string.
+4. map <char, int> char_frequency; mendeklarasikan sebuah objek dari tipe map yang menggunakan karakter sebagai kunci (key) dan bilangan bulat sebagai nilainya. Ini akan digunakan untuk menyimpan frekuensi kemunculan setiap karakter.
+5. Loop for pertama digunakan untuk menghitung frekuensi kemunculan setiap karakter dalam string yang dimasukkan oleh pengguna. Jika karakter tersebut adalah huruf, maka frekuensi kemunculannya akan diinkremen.
+6. Loop for kedua digunakan untuk menampilkan frekuensi kemunculan setiap karakter yang telah dihitung sebelumnya.
+
+Perbedaan Map dan Array:
+Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat. Sedangkan mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Programer harus memahami dan menguasai tipe data c++ dengan baik.Ketika Anda membuat variabel, tipe data harus ada agar variabel memiliki nilai yang jelas dan spesifik ketika digunakan. Terdapat tiga kategori tipe data: tipe data primitif atau tipe data dasar, yang mencakup integer, char, float, dan boolen; tipe data abstrak atau tipe data yang dapat dibentuk sendiri, yang mencakup struct dan class; dan tipe data koleksi atau tipe data yang digunakan untuk pengelompokan, yang mencakup array, map, dan vector. Agar program yang dibuat dapat berjalan dengan benar, efisien, dan terhindar dari kesalahan (error).
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Muharajul Zani (2019). Penjelasan Struktur Data Majemuk. Lampung : Universitas Mitra Indonesia.
+[2] Hermawan T. “Buku Ajar Panduan Praktikum STRUKTUR DATA.” Text-Id.123dok.com, 2014, text-id.123dok.com/document/zkxv02ey-buku-ajar-panduan-praktikum-struktur-data.html. 
