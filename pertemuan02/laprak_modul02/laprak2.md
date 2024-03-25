@@ -154,7 +154,10 @@ int main() {
 #### Output:
 ![2311102160_Valisha](<output_unguided01.png>)
 
-Setelah menerima input, program akan memisahkan angka-angka tersebut menjadi dua kelompok: angka genap dan angka ganjil. Kemudian, program akan menampilkan data array yang dimasukkan pengguna, angka-angka genap yang ditemukan, dan angka-angka ganjil yang ditemukan. 
+Setelah menerima input, program akan memisahkan angka-angka tersebut menjadi dua kelompok: angka genap dan angka ganjil. Kemudian, program akan menampilkan data array yang dimasukkan pengguna, angka-angka genap yang ditemukan, dan angka-angka ganjil yang ditemukan. Alokasi dinamis dua array untuk menyimpan angka genap dan ganjil.
+Meminta pengguna memasukkan angka dan memisahkannya berdasarkan genap/ganjil.
+Menampilkan data array, angka genap, dan angka ganjil.
+Dealokasi memori yang digunakan.
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
