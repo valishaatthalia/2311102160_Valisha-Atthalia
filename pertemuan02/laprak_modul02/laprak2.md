@@ -209,9 +209,78 @@ int main() {
 ```
 ![2311102160_Valisha](<output_unguided02.png>)
 
+Dalam program ini, user diminta untuk memasukkan jumlah elemen untuk setiap dimensi array tiga dimensi. Kemudian, program membuat array tersebut dan meminta user untuk memasukkan nilai-nilai elemennya. Setelah selesai, program menampilkan array tiga dimensi yang telah dibuat.
+
+### 3. [Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata– rata dari suatu array dengan input yang dimasukan oleh user!]
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+double hitung_maksimum(const vector<double>& arr) {
+    double maksimum = arr[0];
+    for (double angka : arr) {
+        if (angka > maksimum) {
+            maksimum = angka;
+        }
+    }
+    return maksimum;
+}
+
+double hitung_minimum(const vector<double>& arr) {
+    double minimum = arr[0];
+    for (double angka : arr) {
+        if (angka < minimum) {
+            minimum = angka;
+        }
+    }
+    return minimum;
+}
+
+double hitung_rata_rata(const vector<double>& arr) {
+    double total = 0;
+    for (double angka : arr) {
+        total += angka;
+    }
+    return total / arr.size();
+}
+
+int main() {
+    vector<double> arr;
+    int n;
+
+    cout << "Masukkan jumlah elemen dalam array: ";
+    cin >> n;
+
+    cout << "Masukkan elemen array:\n";
+    for (int i = 0; i < n; ++i) {
+        double elemen;
+        cout << "Elemen ke-" << i + 1 << ": ";
+        cin >> elemen;
+        arr.push_back(elemen);
+    }
+
+    double maksimum = hitung_maksimum(arr);
+    double minimum = hitung_minimum(arr);
+    double rata_rata = hitung_rata_rata(arr);
+
+    cout << "\nHasil:\n";
+    cout << "Nilai Maksimum: " << maksimum << endl;
+    cout << "Nilai Minimum: " << minimum << endl;
+    cout << "Nilai Rata-rata: " << rata_rata << endl;
+
+    return 0;
+}
+```
+![2311102160_Valisha](<output_unguided03.png>)
+
+Program ini meminta user untuk memasukkan jumlah elemen dalam array, kemudian meminta pengguna untuk memasukkan elemen-elemen array tersebut. Setelah array diisi, program menghitung nilai maksimum, minimum, dan nilai rata-rata dari array tersebut, dan kemudian menampilkan hasilnya.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Array merupakan struktur data yang paling dasar, terdiri dari beberapa jenis, yaitu Array Satu Dimensi, Array Dua Dimensi, Array Tiga Dimensi, Array Empat imensi, dan Array Multidimensi. Setiap jenis array memiliki cara penulisannya dan cara mengakses elemennya. Contoh program untuk input array tiga dimensi dan mencari nilai maksimal pada array. Selain itu, terdapat tugas unguided untuk membuat program menampilkan output tertentu, input array tiga dimensi dengan ukuran elemen yang diinputkan oleh user, dan membuat program menu untuk mencari nilai maksimum, minimum, dan rata-rata dari suatu array dengan input dari user.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Ananda TD, Aswandi Y. Pengembangan Sistem Array Dalam Menentukan Nilai Rata-Rata Tinggi Badan. A Journal for Research in Engineering and Technology. 2023;1(1):12-15. https://journalarie.com/index.php/arie/article/view/2
+[2] lestari, K. (2019, March 29). STUKTUR DATA STATIS ARRAY. https://doi.org/10.31219/osf.io/mx6cp
