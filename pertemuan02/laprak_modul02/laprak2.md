@@ -283,4 +283,5 @@ Array merupakan struktur data yang paling dasar, terdiri dari beberapa jenis, ya
 
 ## Referensi
 [1] Ananda TD, Aswandi Y. Pengembangan Sistem Array Dalam Menentukan Nilai Rata-Rata Tinggi Badan. A Journal for Research in Engineering and Technology. 2023;1(1):12-15. https://journalarie.com/index.php/arie/article/view/2
+
 [2] lestari, K. (2019, March 29). STUKTUR DATA STATIS ARRAY. https://doi.org/10.31219/osf.io/mx6cp
