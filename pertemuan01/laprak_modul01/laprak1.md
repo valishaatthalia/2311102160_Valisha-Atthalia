@@ -278,6 +278,7 @@ Class adalah struktur data yang mendefinisikan tipe data baru yang memiliki data
 B. Fungsi dari Struct
 Struct adalah struktur data yang mirip dengan class, tetapi secara default semua anggotanya adalah public (dalam class, secara default anggotanya adalah private). Struct biasanya digunakan untuk menyimpan sekumpulan data yang terkait, tetapi tidak memiliki fungsi yang terkait.
 
+#### Output:
 !![2311102160_Valisha Atthalia](<outputclass_unguided02.png>)
 
 ### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.]
@@ -311,6 +312,7 @@ int main() {
     return 0;
 }
 ```
+#### Output:
 ![2311102160_Valisha Atthalia](<output_unguided03.png>)
 
 1. string input_string; mendeklarasikan variabel input_string yang akan digunakan untuk menyimpan string yang dimasukkan oleh pengguna.

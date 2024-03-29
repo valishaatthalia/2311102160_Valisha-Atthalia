@@ -207,6 +207,7 @@ int main() {
     return 0;
 }
 ```
+#### Output:
 ![2311102160_Valisha](<output_unguided02.png>)
 
 Dalam program ini, user diminta untuk memasukkan jumlah elemen untuk setiap dimensi array tiga dimensi. Kemudian, program membuat array tersebut dan meminta user untuk memasukkan nilai-nilai elemennya. Setelah selesai, program menampilkan array tiga dimensi yang telah dibuat.
@@ -274,6 +275,7 @@ int main() {
     return 0;
 }
 ```
+#### Output:
 ![2311102160_Valisha](<output_unguided03.png>)
 
 Program ini meminta user untuk memasukkan jumlah elemen dalam array, kemudian meminta pengguna untuk memasukkan elemen-elemen array tersebut. Setelah array diisi, program menghitung nilai maksimum, minimum, dan nilai rata-rata dari array tersebut, dan kemudian menampilkan hasilnya.

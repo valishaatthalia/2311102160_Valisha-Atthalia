@@ -8,8 +8,7 @@ Linked List merupakan suatu bentuk struktur data yang berisi kumpulan data yang 
 
 ## Guided 
 
-### 1. [Nama Topik]
-
+### 1. [Single Linked List]
 ```C++
 #include <iostream>
 using namespace std;
@@ -257,24 +256,221 @@ int main(){
     return 0;
 }
 ```
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Linked list tersebut menyimpan data dalam simpul-simpul yang saling terhubung. Fungsi dari program ini untuk menambahkan, menghapus, mengubah, dan menampilkan data dalam linked list. Setiap simpul memiliki data dan pointer yang menunjuk ke simpul berikutnya. Program ini menggunakan operasi-operasi dasar pada linked list seperti tambah depan, tambah belakang, tambah tengah, hapus depan, hapus belakang, hapus tengah, ubah depan, ubah belakang, ubah tengah, dan tampilkan isi linked list.
 
-## Unguided 
-
-### 1. [Soal]
-
+### 2. [Double Linked List]
 ```C++
 #include <iostream>
 using namespace std;
 
+class Node {
+    public:int data;
+    Node* prev;
+    Node* next;
+};
+class DoublyLinkedList {
+        public:
+        Node* head;
+        Node* tail;
+        DoublyLinkedList() {
+            head = nullptr;
+            tail = nullptr;
+    }
+    void push(int data) {
+        Node* newNode = new Node;
+        newNode->data = data;
+        newNode->prev = nullptr;
+        newNode->next = head;
+        if (head != nullptr) {
+            head->prev = newNode;
+        }
+        else {
+            tail = newNode;
+        }
+        head = newNode;
+    }
+    void pop() {
+        if (head == nullptr) {
+            return;
+        }
+        Node* temp = head;
+        head = head->next;
+        if (head != nullptr) {
+            head->prev = nullptr;
+        }
+        else {
+            tail = nullptr;
+        }
+        delete temp;
+    }
+    bool update(int oldData, int newData) {
+        Node* current = head;while (current != nullptr) {
+            if (current->data == oldData) {
+                current->data = newData;
+                return true;
+            }
+            current = current->next;
+        }
+        return false;
+    }
+    void deleteAll() {
+        Node* current = head;
+        while (current != nullptr) {
+            Node* temp = current;
+            current = current->next;
+            delete temp;
+        }
+        head = nullptr;
+        tail = nullptr;
+    }
+    void display() {
+        Node* current = head;
+        while (current != nullptr) {
+            cout << current->data << " ";
+            current = current->next;
+        }
+        cout << endl;
+    }
+};
+
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    DoublyLinkedList list;
+    while (true) {
+        cout << "1. Add data" << endl;
+        cout << "2. Delete data" << endl;
+        cout << "3. Update data" << endl;
+        cout << "4. Clear data" << endl;
+        cout << "5. Display data" << endl;
+        cout << "6. Exit" << endl;int choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
+        switch (choice) {
+            case 1: {
+                int data;
+                cout << "Enter data to add: ";
+                cin >> data;
+                list.push(data);
+                break;
+            }
+            case 2: {
+                list.pop();
+                break;
+            }
+            case 3: {
+                int oldData, newData;
+                cout << "Enter old data: ";
+                cin >> oldData;
+                cout << "Enter new data: ";
+                cin >> newData;
+                bool updated = list.update(oldData, newData);
+                if (!updated) {
+                    cout << "Data not found" << endl;
+                }
+                break;
+            }
+            case 4: {
+                list.deleteAll();
+                break;
+            }
+            case 5: {
+                list.display();
+                break;
+            }
+            case 6: {
+                return 0;
+            }
+            default: {
+                cout << "Invalid choice" << endl;
+                break;
+            }
+        }
+    }
     return 0;
 }
 ```
-#### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+Dalam program ini, dua kelas utama didefinisikan: kelas Node, yang merepresentasikan simpul dalam Doubly Linked List, dan kelas DoublyLinkedList, yang menyediakan operasi-operasi dasar untuk mengelola Doubly Linked List. Kelas Node memiliki tiga anggota data yaitu data, prev, dan next. Data digunakan untuk menyimpan nilai integer dalam simpul, sedangkan prev dan next adalah pointer yang menunjuk ke simpul sebelumnya dan berikutnya secara berturut-turut. Kelas DoublyLinkedList memiliki dua pointer utama yaitu head dan tail, yang masing-masing menunjuk ke simpul pertama dan terakhir dalam daftar. Konstruktor kelas ini menginisialisasi pointer-head dan pointer-tail ke nullptr, menandakan bahwa daftar saat ini kosong.
 
+## Unguided 
+
+### 1. [Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user]
+
+```C++
+#include <iostream>
+
+using namespace std;
+
+struct Node {
+  string nama;
+  int usia;
+  Node *next;
+};
+
+Node *head = NULL;
+Node *tail = NULL;
+
+void tambahData() {
+  string nama;
+  int usia;
+
+  cout << "Masukkan nama: ";
+  cin >> nama;
+
+  cout << "Masukkan usia: ";
+  cin >> usia;
+
+  Node *baru = new Node;
+  baru->nama = nama;
+  baru->usia = usia;
+  baru->next = NULL;
+
+  if (head == NULL) {
+    head = tail = baru;
+  } else {
+    tail->next = baru;
+    tail = baru;
+  }
+}
+
+void tampilkanData() {
+  Node *current = head;
+
+  while (current != NULL) {
+    cout << "Nama: " << current->nama << endl;
+    cout << "Usia: " << current->usia << endl << endl;
+    current = current->next;
+  }
+}
+
+int main() {
+  int pilihan;
+
+  do {
+    cout << "1. Tambah Data" << endl;
+    cout << "2. Tampilkan Data" << endl;
+    cout << "3. Keluar" << endl;
+    cout << "Pilih menu: ";
+    cin >> pilihan;
+
+    switch (pilihan) {
+      case 1:
+        tambahData();
+        break;
+      case 2:
+        tampilkanData();
+        break;
+      case 3:
+        cout << "Terima kasih!" << endl;
+        break;
+      default:
+        cout << "Pilihan tidak valid!" << endl;
+    }
+  } while (pilihan != 3);
+
+  return 0;
+}
+```
+#### Output:
+![2311102160](<output_unguided01.png>)
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 ## Kesimpulan
