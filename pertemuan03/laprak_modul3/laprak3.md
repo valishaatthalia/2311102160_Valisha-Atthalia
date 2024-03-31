@@ -331,7 +331,7 @@ class DoublyLinkedList {
         }
         cout << endl;
     }
-};
+};  
 
 int main() {
     DoublyLinkedList list;
@@ -471,7 +471,11 @@ int main() {
 ```
 #### Output:
 ![2311102160](<output_unguided01.png>)
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+Struktur node ini merepresentasikan simpul (node) dalam linked list. Setiap simpul memiliki dua variabel: nama untuk menyimpan nama dan usia untuk menyimpan usia, serta next yang merupakan pointer ke simpul berikutnya dalam linked list. Variabel head dan tail digunakan untuk menandai awal (head) dan akhir (tail) dari linked list. Pada awalnya, keduanya diatur ke NULL karena linked list masih kosong. Pada fungsi tambahData() meminta user untuk memasukkan nama dan usia, kemudian membuat simpul baru dengan data tersebut. Jika linked list masih kosong, simpul baru tersebut akan menjadi head dan tail. Jika tidak, simpul baru akan ditambahkan di belakang (sebagai simpul baru) dan tail akan diperbarui. Di fungsi tampilkanData() digunakan untuk menampilkan seluruh data yang tersimpan dalam linked list. Ini dilakukan dengan menelusuri linked list dari head sampai NULL sambil mencetak setiap elemen. Fungsi utama program yang berisi loop utama adalah untuk menampilkan menu kepada user dan memanggil fungsi sesuai dengan pilihan pengguna. Program akan terus berjalan sampai user memilih untuk keluar.
+
+### 2. [Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.]
+
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
