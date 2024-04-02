@@ -393,84 +393,15 @@ Dalam program ini, dua kelas utama didefinisikan: kelas Node, yang merepresentas
 ## Unguided 
 
 ### 1. [Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user]
-
+![2311102160](<soal_no1.png>)
 ```C++
 #include <iostream>
 
 using namespace std;
 
-struct Node {
-  string nama;
-  int usia;
-  Node *next;
-};
-
-Node *head = NULL;
-Node *tail = NULL;
-
-void tambahData() {
-  string nama;
-  int usia;
-
-  cout << "Masukkan nama: ";
-  cin >> nama;
-
-  cout << "Masukkan usia: ";
-  cin >> usia;
-
-  Node *baru = new Node;
-  baru->nama = nama;
-  baru->usia = usia;
-  baru->next = NULL;
-
-  if (head == NULL) {
-    head = tail = baru;
-  } else {
-    tail->next = baru;
-    tail = baru;
-  }
-}
-
-void tampilkanData() {
-  Node *current = head;
-
-  while (current != NULL) {
-    cout << "Nama: " << current->nama << endl;
-    cout << "Usia: " << current->usia << endl << endl;
-    current = current->next;
-  }
-}
-
-int main() {
-  int pilihan;
-
-  do {
-    cout << "1. Tambah Data" << endl;
-    cout << "2. Tampilkan Data" << endl;
-    cout << "3. Keluar" << endl;
-    cout << "Pilih menu: ";
-    cin >> pilihan;
-
-    switch (pilihan) {
-      case 1:
-        tambahData();
-        break;
-      case 2:
-        tampilkanData();
-        break;
-      case 3:
-        cout << "Terima kasih!" << endl;
-        break;
-      default:
-        cout << "Pilihan tidak valid!" << endl;
-    }
-  } while (pilihan != 3);
-
-  return 0;
-}
 ```
 #### Output:
-![2311102160](<output_unguided01.png>)
+
 
 Struktur node ini merepresentasikan simpul (node) dalam linked list. Setiap simpul memiliki dua variabel: nama untuk menyimpan nama dan usia untuk menyimpan usia, serta next yang merupakan pointer ke simpul berikutnya dalam linked list. Variabel head dan tail digunakan untuk menandai awal (head) dan akhir (tail) dari linked list. Pada awalnya, keduanya diatur ke NULL karena linked list masih kosong. Pada fungsi tambahData() meminta user untuk memasukkan nama dan usia, kemudian membuat simpul baru dengan data tersebut. Jika linked list masih kosong, simpul baru tersebut akan menjadi head dan tail. Jika tidak, simpul baru akan ditambahkan di belakang (sebagai simpul baru) dan tail akan diperbarui. Di fungsi tampilkanData() digunakan untuk menampilkan seluruh data yang tersimpan dalam linked list. Ini dilakukan dengan menelusuri linked list dari head sampai NULL sambil mencetak setiap elemen. Fungsi utama program yang berisi loop utama adalah untuk menampilkan menu kepada user dan memanggil fungsi sesuai dengan pilihan pengguna. Program akan terus berjalan sampai user memilih untuk keluar.
 
