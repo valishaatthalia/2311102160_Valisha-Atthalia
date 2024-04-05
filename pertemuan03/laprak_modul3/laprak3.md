@@ -717,8 +717,8 @@ Untuk menyimpan data siswa, seperti nama dan umur, program ini menggunakan struk
 
 ### 2. [Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.]
 ![2311102160](<soal_no2.png>)
+![2311102160](<soalno2.png>)
 
-![2311102160](<soal.png>)
 ```C++
 
 ## Kesimpulan
