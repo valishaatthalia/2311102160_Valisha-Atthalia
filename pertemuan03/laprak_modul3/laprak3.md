@@ -708,13 +708,16 @@ int main(){
 }
 ```
 #### Output:
+
 ![2311102160](<output_unguided01.png>)
+
 ![2311102160](<output_unguided01.2.png>)
 
 Untuk menyimpan data siswa, seperti nama dan umur, program ini menggunakan struktur data daftar terhubung. Program mendeklarasikan sebuah node dengan dua atribut, yaitu nama dan umur, dan sebuah pointer next yang menunjuk ke node berikutnya. Selain itu, program mendeklarasikan dua variabel pointer head dan tail sebagai penanda awal dan akhir dari daftar terhubung, dan kemudian menetapkan berbagai cara untuk melakukan operasi pada daftar terhubung, seperti memulai, memeriksa apakah daftar terhubung kosong, menambah, menghapus, dan mengubah data di depan, belakang, dan tengah, menghitung jumlah node, dan menampilkan data. Fungsi utama program adalah mengaktifkan daftar terhubung dan menambahkan sejumlah data siswa ke dalam daftar terhubung. Selanjutnya, program memberikan menu interaktif kepada pengguna yang memungkinkan mereka melakukan berbagai hal dengan data siswa, seperti menambahkan, menghapus, mengubah, menambahkan data ke posisi tertentu, menghapus data ke posisi tertentu, menghapus semua data, dan menampilkan semua data. Switch case akan menjalankan setiap operasi yang dipilih pengguna dan memanggil prosedur yang sesuai yang telah didefinisikan sebelumnya. Hal ini memungkinkan pengguna mengelola data siswa sesuai kebutuhan mereka melalui menu yang tersedia. Program akan terus berjalan sampai pengguna memilih untuk keluar.
 
 ### 2. [Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.]
 ![2311102160](<soal_no2.png>)
+
 ![2311102160](<soal.png>)
 ```C++
 
