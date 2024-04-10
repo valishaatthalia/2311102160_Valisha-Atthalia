@@ -4,7 +4,19 @@
 ## Dasar Teori
 
 a. Single Linked List
-Linked List merupakan suatu bentuk struktur data yang berisi kumpulan data yang disebut sebagai node yang tersusun secara sekuensial, saling sambung menyambung, dinamis, dan terbatas. 
+Linked List merupakan suatu bentuk struktur data yang berisi kumpulan data yang disebut sebagai node yang tersusun secara sekuensial, saling sambung menyambung, dinamis, dan terbatas. Umumnya "linked list" berarti single linked list. Single linked list adalah daftar terhubung yang setiap simpul pembentuknya mempunyai satu rantai(link) ke simpul lainnya. Single linked list terdiri dari sejumlah node dimana setiap node memiliki pointer yang merujuk ke elemen berikut (*next). Pointer next pada node terakhir akan menunjuk ke NULL. Ini menandakan akhir dari list. Berikut meupakan ilustrasi dari sebuah single linked list.
+
+b. Double Linked List
+Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next) dan satu link atau pointer yang merujuk ke node sebelumnya (*prev) Keuntungan dari double linked list adalah bahwa dengan adanya 2 buah pointer, programmer dapat melakukan operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Berikut merupakan ilustrasi dari double linked list.
+
+Secara garis besar, linked list memiliki kelebihan dan kekurangan. Kelebihan dari linked list antara lain :
+- Memiliki ukuran yang dinamis, sehingga ukurannya dapat disesuaikan dengan kebutuhan
+- Penambahan dan penghapusan elemen di tengah linked list bisa dilakukan dengan mudah dan efisien, tanpa memerlukan penggeseran elemen-elemen lainnya.
+- Dapat digunakan sebagai dasar untuk struktur data lainnya seperti stack, queue, dan hash table.
+
+Kekurangan dan linked list antara lain :
+- Penggunaan Memori Tambahan untuk Pointer (*next dan *prev)
+- Data didalam list tidak terurut
 
 ## Guided 
 
@@ -962,8 +974,10 @@ int main() {
 ![2311102160](<output_unguided02.png>)
 ![2311102160](<outputunguided02.png>)
 
+Struktur data ini digunakan untuk menyimpan informasi tentang produk skincare, seperti nama produk dan harganya. Program ini menyediakan berbagai fungsi dasar untuk operasi-operasi pada linked list, termasuk penambahan data, penghapusan data, pembaruan data, dan penampilan data.
+
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Linked list adalah struktur data yang terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. terdapat 2 jenis linked list, yaitu single linked list dan double linked list. Pada single linked list, setiap nodenya terdiri dari 2 bagian, yaitu nilai yang ditampung dan pointer next. Sedangkan pada double linked list, setiap nodenya terdiri dari 3 bagian, yaitu nilai yang ditampung, pointer prev, dan pointer next. Masing-masing jenis Linked List ini memiliki kelebihan dalam hal penyisipan dan penghapusan elemen yang lebih efisien dibandingkan array. Namun, Linked List juga membutuhkan lebih banyak memori karena setiap nodenya memakai lebih dari 1 blok memori dan umumnya memiliki akses data yang lebih lambat.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Harihayati Mardzuki, Tati. (2020). Double Linked List. [Teaching Resource]. http://repository.unikom.ac.id/id/eprint/64221.
