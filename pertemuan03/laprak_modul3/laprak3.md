@@ -4,9 +4,11 @@
 ## Dasar Teori
 
 a. Single Linked List
+
 Linked List merupakan suatu bentuk struktur data yang berisi kumpulan data yang disebut sebagai node yang tersusun secara sekuensial, saling sambung menyambung, dinamis, dan terbatas. Umumnya "linked list" berarti single linked list. Single linked list adalah daftar terhubung yang setiap simpul pembentuknya mempunyai satu rantai(link) ke simpul lainnya. Single linked list terdiri dari sejumlah node dimana setiap node memiliki pointer yang merujuk ke elemen berikut (*next). Pointer next pada node terakhir akan menunjuk ke NULL. Ini menandakan akhir dari list. Berikut meupakan ilustrasi dari sebuah single linked list.
 
 b. Double Linked List
+
 Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next) dan satu link atau pointer yang merujuk ke node sebelumnya (*prev) Keuntungan dari double linked list adalah bahwa dengan adanya 2 buah pointer, programmer dapat melakukan operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Berikut merupakan ilustrasi dari double linked list.
 
 Secara garis besar, linked list memiliki kelebihan dan kekurangan. Kelebihan dari linked list antara lain :
