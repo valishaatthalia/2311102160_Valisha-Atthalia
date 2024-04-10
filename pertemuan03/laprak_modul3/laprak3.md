@@ -983,3 +983,4 @@ Linked list adalah struktur data yang terdiri dari sejumlah node atau simpul yan
 
 ## Referensi
 [1] Harihayati Mardzuki, Tati. (2020). Double Linked List. [Teaching Resource]. http://repository.unikom.ac.id/id/eprint/64221.
+[2] Mulyana, A. (2023). E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data
