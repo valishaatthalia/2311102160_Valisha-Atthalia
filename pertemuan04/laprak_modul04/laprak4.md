@@ -5,18 +5,19 @@
 
 Circular Linked List adalah suatu linked list yang tidak memiliki nilai nil / NULL untuk medan sambungannya. Circular Linked List dapat dilakukan terhadap Singly Linked List maupun Doubly Linked  List. Dalam Circular Linked List tidak terdapat suatu simpul yang  bernilai NULL. Hal ini terjadi karena simpul terakhir dihubungkan  terhadap simpul pertama untuk Single Linked List dan simpul pertama dengan simpul terakhir saling terhubung untuk Double Linked List. Semua simpul berhak diperlakukan sebagai simpul depan.
 1. Circular single linked list 
-Hampir sama dengan Singly Linked List, hanya saja 
-simpul terakhir akan dihubungkan ke simpul pertama 
-sehingga berbentuk melingkar. Pendeklarasian dan 
-operasi yang ada di Singly Linked List juga berlaku di 
-Circular Singly Linked List, yang perlu dijaga adalah 
-bahwa simpul terakhir harus selalu terhubung ke simpul 
-pertama.
+
+Hampir sama dengan Singly Linked List, hanya saja simpul terakhir akan dihubungkan ke simpul pertama sehingga berbentuk melingkar. Pendeklarasian dan operasi yang ada di Singly Linked List juga berlaku di Circular Singly Linked List, yang perlu dijaga adalah bahwa simpul terakhir harus selalu terhubung ke simpul pertama.
+
 2. Double Circluar Linked List
+
 Double Circular Linked List adalah jenis linked list di mana field pointer-nya terdiri dari dua buah pointer yang bergerak ke dua arah, yaitu prev dan next. Selain itu, pointer next pada Double Circular Linked List akan menunjuk kembali pada elemen tersebut sendiri, menciptakan sebuah pola sirkular. Dengan kata lain, baik pointer next maupun pointer prev pada Double Circular Linked List akan membentuk sebuah loop yang menghubungkan setiap elemen dalam struktur data ini secara berputar.
+
 3. Double Linked List Non Circular
+
 Double Linked List Non Circular, saat berada pada node yang berfungsi sebagai head atau node pertama dalam linked list, nilai dari pointer prev pada node tersebut akan diatur menjadi NULL. Hal ini dikarenakan node head tidak memiliki node sebelumnya. Sedangkan untuk node yang berfungsi sebagai tail atau node terakhir dalam linked list, nilai dari pointer next pada node tersebut akan diatur untuk menunjuk ke NULL, menandakan akhir dari linked list tersebut.
+
 4. Double Circular Linked List
+
 Double Circular Linked List adalah jenis daftar terhubung di mana field pointer-nya terdiri dari dua buah pointer yang bergerak ke dua arah, yaitu prev dan next. Selain itu, pointer next pada Double Circular Linked List akan menunjuk kembali pada elemen tersebut sendiri, menciptakan pola sirkular. Dengan kata lain, baik pointer prev maupun pointer next akan membentuk sebuah loop yang menghubungkan setiap elemen dalam struktur data ini s
 
 ## Guided 
