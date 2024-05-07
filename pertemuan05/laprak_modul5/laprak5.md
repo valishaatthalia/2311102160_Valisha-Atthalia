@@ -281,9 +281,13 @@ Program tersebut menjalankan struktur data hash table, yang digunakan untuk meny
 ## Unguided
 
 ### 1. [Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai.]
+
 Dengan ketentuan : 
+
 a. Setiap mahasiswa memiliki NIM dan nilai.
+
 b. Program memiliki tampilan pilihan menu berisi poin C.
+
 c. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
 
 ```C++
@@ -512,4 +516,5 @@ Hash table adalah struktur data yang memungkinkan penyimpanan dan akses data den
 
 ## Referensi
 [1] Manurung R, Azurat A. Hash Table. Hash Table. Published online 2008:4-5. http://aren.cs.ui.ac.id/sda/resources/sda2010/15_hashtable.pdf
-[2] [1] Hussain Anwar," Cara Jitu Mahir C++ untuk Pemula". Jakarta: Elex media, 2020.
+
+[2] Hussain Anwar," Cara Jitu Mahir C++ untuk Pemula". Jakarta: Elex media, 2020.
