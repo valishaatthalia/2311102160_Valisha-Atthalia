@@ -8,15 +8,15 @@ Stack adalah struktur data sederhana yang digunakan untuk menyimpan data (mirip 
 
 Operasi pada stack melibatkan serangkaian fungsi yang memberikan kita kemampuan untuk berinteraksi dengan struktur data ini. Mari kita jabarkan beberapa operasi dasar yang dapat kita lakukan pada stack:
 
- - a. Push (Masukkan): Bayangkan menambahkan satu per satu buku ke tumpukan yang sudah Anda susun. Setiap buku yang Anda tambahkan diletakkan di atas tumpukan, sehingga semakin tinggi tumpukan tersebut.
- - b. Pop (Keluarkan): Sekarang, bayangkan mengambil buku dari atas tumpukan yang telah Anda susun. Ketika Anda mengambil buku, yang Anda ambil adalah buku paling atas, yang paling terlihat.
- - c. Top (Atas): Ketika Anda ingin melihat judul buku teratas di tumpukan tanpa mengganggu susunannya.
- - d. IsEmpty (Kosong): Anda mungkin ingin memeriksa apakah tumpukan buku kosong atau masih ada buku yang tersisa di dalamnya.
- - e. IsFull (Penuh): Namun, jika Anda hanya memiliki sedikit ruang untuk menambahkan buku baru, Anda perlu memeriksa apakah tumpukan sudah penuh atau masih ada ruang kosong
- - f. Size (Ukuran): Ketika Anda ingin tahu berapa banyak buku yang telah Anda susun di tumpukan tersebut.
- - g. Peek (Lihat): Jika Anda ingin melihat buku tertentu di dalam tumpukan tanpa harus mengambilnya dari susunannya.
- - h. Clear (Hapus Semua): Ketika tiba saatnya untuk membersihkan tumpukan, Anda ingin mengosongkan semua buku dari tumpukan.
- - i. Search (Cari): Dan terakhir, jika Anda ingin menemukan apakah buku tertentu ada di dalam tumpukan, Anda bisa mencari dengan cepat.
+ - Push (Masukkan): Bayangkan menambahkan satu per satu buku ke tumpukan yang sudah Anda susun. Setiap buku yang Anda tambahkan diletakkan di atas tumpukan, sehingga semakin tinggi tumpukan tersebut.
+ - Pop (Keluarkan): Sekarang, bayangkan mengambil buku dari atas tumpukan yang telah Anda susun. Ketika Anda mengambil buku, yang Anda ambil adalah buku paling atas, yang paling terlihat.
+ - Top (Atas): Ketika Anda ingin melihat judul buku teratas di tumpukan tanpa mengganggu susunannya.
+ - IsEmpty (Kosong): Anda mungkin ingin memeriksa apakah tumpukan buku kosong atau masih ada buku yang tersisa di dalamnya.
+ - IsFull (Penuh): Namun, jika Anda hanya memiliki sedikit ruang untuk menambahkan buku baru, Anda perlu memeriksa apakah tumpukan sudah penuh atau masih ada ruang kosong
+ - Size (Ukuran): Ketika Anda ingin tahu berapa banyak buku yang telah Anda susun di tumpukan tersebut.
+ - Peek (Lihat): Jika Anda ingin melihat buku tertentu di dalam tumpukan tanpa harus mengambilnya dari susunannya.
+ - Clear (Hapus Semua): Ketika tiba saatnya untuk membersihkan tumpukan, Anda ingin mengosongkan semua buku dari tumpukan.
+ - Search (Cari): Dan terakhir, jika Anda ingin menemukan apakah buku tertentu ada di dalam tumpukan, Anda bisa mencari dengan cepat.
 
 
 

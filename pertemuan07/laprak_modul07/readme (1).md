@@ -1,5 +1,5 @@
-# <h1 align="center">Laporan Praktikum Modul Tipe Data</h1>
-<p align="center">Arvinanto Bahtiar</p>
+# <h1 align="center">Laporan Praktikum Modul Queue</h1>
+<p align="center">Valisha Atthalia Naura Irfan - 2311102160</p>
 
 ## Dasar Teori
 
