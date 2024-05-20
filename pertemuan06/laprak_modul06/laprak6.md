@@ -267,7 +267,7 @@ int main() {
 Kode ini mengambil input berupa string (kalimat), membalik urutan karakternya menggunakan stack (tumpukan), dan kemudian mencetak string yang sudah dibalik.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Stack adalah struktur data linier yang bersifat LIFO (Last In First Out), dimana elemen yang paling akhir dimasukkan akan menjadi elemen yang pertama kali dikeluarkan. Stack sering diilustrasikan seperti tumpukan piring, di mana piring yang diletakkan paling akhir akan menjadi piring yang diambil pertama kali.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Anisya. Hal 1.; 2020. Accessed May 20, 2024. https://sisfo.itp.ac.id/bahanajar/BahanAjar/Anisya/Modul%203%20-%20Tumpukan.pdf
