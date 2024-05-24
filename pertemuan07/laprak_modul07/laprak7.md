@@ -3,7 +3,17 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Queue adalah struktur data yang memungkinkan penyimpanan dan pengambilan data dengan prinsip FIFO (First-In First-Out).  Artinya, data yang pertama dimasukkan ke dalam queue akan menjadi data yang pertama pula untuk dikeluarkan. Konsep ini serupa dengan antrian pada kehidupan sehari-hari di mana orang yang datang lebih dulu akan dilayani terlebih dahulu. Dalam implementasinya, queue dapat dibangun menggunakan array atau linked list. Struktur data queue memiliki dua pointer utama, yaitu front dan rear. Front mengarah ke elemen pertama dalam queue, sementara rear mengarah ke elemen terakhir.
+
+Proses antrian (queueing  process)adalah  suatu  proses  yang  berhubungan  dengan  kedatangan  konsumen  pada  suatu fasilitas pelayanan, kemudian menunggu dalam suatu barisan (antrian) bila fasilitas pelayanan sedang sibuk konsumen tersebut  akan  menunggu  dan  konsumen  akan  meninggallkan  fasilitas  pelayanan  tersebut  apabila  sudah  mendapatkan pelayanan. 
+
+Proses operasi pada Queue:
+- Enqueue() :menambahkan data kedalam queue.
+- Dequeue() :mengeluarkan data dari queue.
+- Peek() :mengambil data dari queue tanpa menghapusnya.
+- isEmpty() :mengecek apakah queue kosong atau tidak.
+- isFull() :mengecek apakah queue penuh atau tidak.
+- Size() :menghitung jumlah elemen dalam queue.
 
 ## Guided 
 
@@ -385,7 +395,9 @@ Program dimulai dengan deklarasi struct node yang berisi data nama_160, nim_160,
 Kode program ini mengimplementasikan operasi-operasi dasar pada struktur data Queue seperti enqueue (menambahkan data), dequeue (menghapus data dari depan), menghitung jumlah data, dan menghapus semua data dari queue.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Queue (antrian) adalah struktur data linier yang diimplementasikan dengan prinsip First In First Out (FIFO). Artinya, elemen yang pertama masuk ke dalam antrian akan menjadi elemen pertama yang dikeluarkan. Queue banyak digunakan dalam pemrograman untuk mengelola sumber daya, mengatur proses, dan menerapkan algoritma lainnya yang membutuhkan urutan first-come, first-served.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Muhammad Nugraha. Dasar Pemrograman Dengan C++ Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta. 2021.
+
+[2] 5.Sari IP, Batubara IH, Ramadhani F, Wardani S. Perancangan Sistem Antrian pada Wahana Hiburan dengan Metode First In First Out (FIFO). sudo Jurnal Teknik Informatika. 2022;1(3):116-123. doi:https://doi.org/10.56211/sudo.v1i3.93
