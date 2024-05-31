@@ -11,7 +11,7 @@ bool isVowel_160(char ch) {
 }
 
 // Fungsi untuk menghitung banyaknya huruf vokal dalam sebuah kalimat
-int countVowels_160(const string &sentence) {
+int countVowels_160(const string & sentence) {
     int count = 0;
     for (char ch : sentence) {
         if (isVowel_160(ch)) {
