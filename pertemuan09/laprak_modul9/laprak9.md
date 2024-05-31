@@ -455,8 +455,8 @@ int main()
 
 Kode di atas digunakan untuk implementasi program penerapan Graph sederhana dalam C++. Dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya. Berikut rincian programnya:
 
-- int JumlahSimpul_324;: Variabel untuk menyimpan jumlah simpul yang akan dimasukkan oleh pengguna.
-- NamaSimpul_324 adalah vektor yang berisi nama-nama simpul.
+- int JumlahSimpul_160;: Variabel untuk menyimpan jumlah simpul yang akan dimasukkan oleh pengguna.
+- NamaSimpul_160 adalah vektor yang berisi nama-nama simpul.
 - bobot_160 adalah matriks yang berisi bobot (jarak) antar simpul.
 - vector <string> NamaSimpul_160(JumlahSimpul_160);: Vektor untuk menyimpan nama-nama simpul.
 - vector<vector<int>> bobot(JumlahSimpul_160, vector<int>(JumlahSimpul_160));: Matriks untuk menyimpan bobot (jarak) antar simpul.
